@@ -1,0 +1,104 @@
+// COMBOS
+//   name      result           chord keys
+
+COMB(Lnumtoggle, TG(_NUM),      SG_J  , KC_I, KC_O)
+																		// UIO to toggle numpad and mousekeys
+COMB(Rnumtoggle, TG(_NUM),      SG_SPC1, SG_F, KC_E)
+																		// QWE to toggle numpad and mousekeys
+COMB(navtoggle1, TG(_GBF),       KC_T, SG_4)
+																		// ASD for nav later
+COMB(navtoggle2, TG(_GBF),	   SG_K, SG_L, SG_SCLN)
+																		// KL; for nav layer
+SUBS(leftparen,               SS_LSFT("8"),        SG_8,  SG_9)
+																		// 8 9 for ( 
+SUBS(rightparen,              SS_LSFT("9"),        SG_9,  SG_0)
+																		// 9 0 for )
+SUBS(pipes,              SS_DOWN(X_LSFT) SS_TAP(X_INT3) SS_UP(X_LSFT),        SG_0,  SG_MINS)
+																		// 0 - for |
+SUBS(capslockreal,              SS_DOWN(X_LSFT) SS_TAP(X_CAPS) SS_UP(X_LSFT),        SG_F,  SG_J)
+
+
+SUBS(excla,              SS_LSFT("1"),        SG_1,  SG_2)
+																		// 9 0 for )
+SUBS(doublequote,              SS_LSFT("2"),        SG_2,  SG_3)
+																		// 9 0 for )
+
+COMB(refresh, KC_F5, SG_SPC1, SG_5)
+
+
+
+SUBS(newprintscreen, SS_DOWN(X_LCTL) SS_TAP(X_Q) SS_UP(X_LCTL), KC_ESC, SG_1)
+
+COMB(jptoggle2, KC_GRV, KC_E, SG_F)
+
+COMB(clickleft1, KC_MS_BTN1, SG_SPC1, SG_4)
+
+COMB(bold,              KC_GRV,        SG_A, SG_S,  SG_D, SG_F) // SS_DOWN(X_LCTL) SS_TAP(X_B) SS_UP(X_LCTL)
+																		// sdf - for ctrl b																		
+COMB(bold2,              KC_GRV,        SG_S,  SG_D, SG_F) // SS_DOWN(X_LCTL) SS_TAP(X_B) SS_UP(X_LCTL)
+																		// sdf - for ctrl b																		
+
+
+SUBS(apostrophes2,               SS_LSFT("7"),        SG_K,  SG_J)
+																		// K J for ' 
+
+SUBS(quotesK,               SS_LSFT("2"),        SG_W,  SG_K)
+																		// K W for " 
+
+SUBS(selectallleft,             SS_DOWN(X_LCTL) SS_TAP(X_END) SS_DOWN(X_LSFT) SS_TAP(X_HOME) SS_UP(X_LSFT) SS_UP(X_LCTL),       SG_Q, SG_W,  KC_E)
+																		// D W for ' 
+
+SUBS(selectallright,             SS_DOWN(X_LCTL) SS_TAP(X_END) SS_DOWN(X_LSFT) SS_TAP(X_HOME) SS_UP(X_LSFT) SS_UP(X_LCTL),       SG_PGUP,  SG_AT)
+
+
+COMB(menukeyL,              KC_APP,        SG_V,  SG_B, SG_C)
+																		// P and [] for menu
+
+COMB(fv_enter,                KC_ENT,          SG_F,  SG_V)
+																		// FV for enter
+COMB(fr_enter,                KC_ENT,          SG_F,  KC_R)
+																		// FR for enter
+
+COMB(jn_enter,                KC_ENT,          SG_J,  KC_N)
+																		// JN for enter
+COMB(hometabl,                KC_TAB,          SG_F,  SG_W)
+																		// WF for TAB
+COMB(LBRCright,                KC_RBRC,          KC_P,  KC_LBRC)
+																		// P@ for [
+COMB(RBRCright,                KC_BSLS,          KC_DEL,  KC_LBRC)
+																		// @del for ]
+
+
+COMB(hometab3,                KC_TAB,          KC_T,  SG_G)
+																		// TG for Tab
+COMB(hometab4,                KC_TAB,          KC_T,  KC_R)
+																		// TR for Tab
+COMB(langswap2,                KC_GRV,          SG_7,  SG_8)
+																		// WF for JP/EN
+
+COMB(weresc,                  KC_ESC,          SG_W, KC_E, KC_R)
+																		// WER for esc 
+
+COMB(ef2,                  KC_F2,          KC_E, SG_2)
+																		// E and 2 for f2
+COMB(tf5,                  KC_F5,          KC_T, SG_5)
+																		// T and 5 for f5
+SUBS(r3bck,                    SS_DOWN(X_LALT) SS_TAP(X_LEFT) SS_UP(X_LALT),   KC_R, SG_3)
+																		// R and 3 for back 
+SUBS(r4fwd,                    SS_DOWN(X_LALT) SS_TAP(X_RGHT) SS_UP(X_LALT),   KC_R, SG_4)
+																		// R and 4 for forward
+															
+SUBS(copier,                    SS_DOWN(X_LCTL) SS_TAP(X_C) SS_UP(X_LCTL),   SG_Z, SG_C)
+																		// ZC to Copy
+SUBS(paster,                    SS_DOWN(X_LCTL) SS_TAP(X_V) SS_UP(X_LCTL),   SG_X, SG_V)
+																		// XV to Paste
+COMB(bspc1, KC_BACKSPACE, KC_I, SG_9)
+COMB(bspc2, KC_BACKSPACE, KC_COMM, KC_DOT)
+
+SUBS(cdset, "cd /c/Users/Main/Documents/GitHub/qmk"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"firmware"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"bluetooth"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"scrubtest", SG_C,SG_D,SG_SPC1)
+
+SUBS(dz60compset, "qmk compile -kb dztech/dz60rgb"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"wkl/v2"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"1 -km sagiteya", SG_D,SG_Z,SG_SPC1)
+
+SUBS(k7compset, "qmk compile -kb keychron/k7"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"pro/ansi/rgb -km sagi1", SG_K,SG_7,SG_SPC1)
+
+SUBS(ctlalttab,  SS_DOWN(X_LCTL) SS_DOWN(X_LALT)  SS_TAP(X_TAB) SS_UP(X_LCTL) SS_UP(X_LALT), SG_Q, SG_W )
