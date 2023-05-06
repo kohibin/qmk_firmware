@@ -1,0 +1,75 @@
+// COMBOS
+//   name      result           chord keys
+
+COMB(Rnumtoggle, TG(_NUM),      SG_SPC1, SG_SCLN)
+																		// QWE to toggle numpad and mousekeys
+COMB(navtoggle1, KC_F5,       SG_T, SG_4)
+																		// ASD for nav later
+SUBS(leftparen,               SS_LSFT("8"),        SG_8,  SG_9)
+																		// 8 9 for ( 
+SUBS(rightparen,              SS_LSFT("9"),        SG_9,  SG_0)
+																		// 9 0 for )
+COMB(grvM,              KC_GRV,        SG_M,  SG_COMM)
+																		// 0 - for | SS_DOWN(X_LSFT) SS_TAP(X_INT3) SS_UP(X_LSFT)
+SUBS(capslockreal,              SS_DOWN(X_LSFT) SS_TAP(X_CAPS) SS_UP(X_LSFT),        SG_H,  SG_J)
+
+
+SUBS(excla,              SS_LSFT("1"),        SG_1,  SG_2)
+																		// 9 0 for )
+SUBS(doublequote,              SS_LSFT("2"),        SG_2,  SG_3)
+																		// 9 0 for )
+
+COMB(refresh, KC_F5, SG_SPC1, SG_5)
+
+COMB(bakslash, KC_INT1, SG_MINS,  SG_TILD)
+
+SUBS(newprintscreen, SS_DOWN(X_LCTL) SS_TAP(X_Q) SS_UP(X_LCTL), SG_Q, SG_2)
+
+COMB(clickleft1, KC_MS_BTN1, SG_SPC1, SG_4)
+ 
+SUBS(apostrophes2,               SS_LSFT("7"),        SG_K,  SG_J)
+																		// K J for ' 
+
+SUBS(quotesK,               SS_LSFT("2"),        SG_W,  SG_K)
+																		// K W for " 
+
+
+COMB(menukeyL,              KC_APP,        SG_V,  SG_B, SG_C)
+																		// P and [] for menu
+
+COMB(fv_enter,                KC_ENT,          SG_F,  SG_V)
+																		// FV for enter
+COMB(jn_enter,                KC_ENT,          SG_J,  SG_N)
+																		// JN for enter
+COMB(LBRCright,                KC_RBRC,          SG_P,  SG_AT)
+																		// P@ for [
+COMB(RBRCright,                KC_BSLS,          SG_DEL,  SG_AT)
+																		// @del for ]
+
+SUBS(cutter,                    SS_DOWN(X_LCTL) SS_TAP(X_X) SS_UP(X_LCTL),   SG_Z, SG_X)
+																		// ZX to Cut															
+SUBS(copier,                    SS_DOWN(X_LCTL) SS_TAP(X_C) SS_UP(X_LCTL) SS_TAP(X_RGHT),   SG_C, SG_X)
+																		// ZC to Copy
+SUBS(copier_r,                    SS_DOWN(X_LCTL) SS_TAP(X_C) SS_UP(X_LCTL) SS_TAP(X_RGHT),   SG_J, SG_K, SG_L)
+																		// ZC to Copy
+
+SUBS(paster,                    SS_DOWN(X_LCTL) SS_TAP(X_V) SS_UP(X_LCTL),   SG_C, SG_V)
+																		// CV to Paste
+SUBS(paster_r,                    SS_DOWN(X_LCTL) SS_TAP(X_V) SS_UP(X_LCTL),   SG_M, SG_COMM, SG_DOT)
+																		// XV to Paste
+
+
+COMB(bspc1, KC_BACKSPACE, SG_U, SG_9)
+COMB(esc2, KC_ESC, SG_COMM, SG_DOT)
+SUBS(quot2, SS_LSFT("2"), SG_K, SG_L)
+
+SUBS(cdset, "cd /c/Users/Main/Documents/GitHub/qmk"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"firmware"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"bluetooth"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"scrubtest", SG_C,SG_D,SG_SPC1)
+
+SUBS(dz60compset, "qmk compile -kb dztech/dz60rgb"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"wkl/v2"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"1 -km kohibin", SG_D,SG_Z,SG_SPC1)
+
+SUBS(k7compset, "qmk compile -kb keychron/k7"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"pro/ansi/rgb -km kohibin", SG_K,SG_7,SG_SPC1)
+
+SUBS(k6compset, "qmk compile -kb keychron/k6"SS_DOWN(X_LSFT) SS_TAP(X_INT1) SS_UP(X_LSFT)"pro/ansi/rgb -km kohibin", SG_K,SG_6,SG_SPC1)
+
+
+SUBS(ctlalttab,  SS_DOWN(X_LCTL) SS_DOWN(X_LALT)  SS_TAP(X_TAB) SS_UP(X_LCTL) SS_UP(X_LALT), SG_W, SG_Q)
